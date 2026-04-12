@@ -145,12 +145,126 @@ body[data-theme="instagram"] {
 }
 
 /* ================================================================
+   THEME: CYBERPUNK — Hot Pink + Electric Purple hacker neon
+   Design intent: Futuristic, bold, tech-forward aesthetic for AI/ML branding
+   Core palette:
+   - Primary accent: #ff006e
+   - Secondary accent: #b500ff
+   - Base background: #0a0a0f
+   ================================================================ */
+body[data-theme="cyberpunk"] {
+  --accent: #ff006e;
+  --accent-dim: rgba(255,0,110,0.16);
+  --accent-glow: rgba(255,0,110,0.45);
+  --accent-dark: #8a0040;
+  --accent2: #b500ff;
+  --bg: #0a0a0f;
+  --bg2: #0f0b16;
+  --bg3: #130d1f;
+  --glass: rgba(255,0,110,0.06);
+  --glass2: rgba(181,0,255,0.05);
+  --border: rgba(255,0,110,0.28);
+  --border2: rgba(181,0,255,0.16);
+  --text: #ffe8f4;
+  --text-dim: #c082b0;
+  --text-dimmer: #7b4d6e;
+  --hero-grad: linear-gradient(135deg, #ff006e 0%, #b500ff 100%);
+  --card-hover-glow: rgba(255,0,110,0.1);
+  --card-hover-border: rgba(255,0,110,0.42);
+  --btn-primary-bg: linear-gradient(135deg, #ff006e, #b500ff);
+  --btn-primary-color: #ffffff;
+  --scrollbar-thumb: #8a0040;
+  --spin-ring: conic-gradient(from 0deg, #ff006e 0%, #b500ff 50%, #ff006e 100%);
+  --spin-ring2: conic-gradient(from 180deg, rgba(181,0,255,0.45) 0%, rgba(255,0,110,0.45) 50%, rgba(181,0,255,0.45) 100%);
+  --halo: radial-gradient(circle, rgba(255,0,110,0.22) 0%, rgba(181,0,255,0.16) 40%, transparent 70%);
+  --canvas-r: 255; --canvas-g: 0; --canvas-b: 110;
+  --canvas-grid: rgba(255,0,110,0.02);
+}
+
+/* ================================================================
+   THEME: HACKER / MATRIX — Matrix Green + Code Blue on pure black
+   Design intent: Classic terminal-inspired, code-first hacker look
+   Core palette:
+   - Primary accent: #00ff00
+   - Secondary accent: #0099ff
+   - Base background: #000000
+   ================================================================ */
+body[data-theme="hacker"] {
+  --accent: #00ff00;
+  --accent-dim: rgba(0,255,0,0.14);
+  --accent-glow: rgba(0,255,0,0.45);
+  --accent-dark: #0a7a0a;
+  --accent2: #0099ff;
+  --bg: #000000;
+  --bg2: #030507;
+  --bg3: #06090d;
+  --glass: rgba(0,255,0,0.04);
+  --glass2: rgba(0,153,255,0.04);
+  --border: rgba(0,255,0,0.24);
+  --border2: rgba(0,153,255,0.14);
+  --text: #eaffea;
+  --text-dim: #83b883;
+  --text-dimmer: #4e6d4e;
+  --hero-grad: linear-gradient(135deg, #00ff00 0%, #0099ff 100%);
+  --card-hover-glow: rgba(0,255,0,0.08);
+  --card-hover-border: rgba(0,255,0,0.38);
+  --btn-primary-bg: #00ff00;
+  --btn-primary-color: #001500;
+  --scrollbar-thumb: #0a7a0a;
+  --spin-ring: conic-gradient(from 0deg, #00ff00 0%, #0099ff 50%, #00ff00 100%);
+  --spin-ring2: conic-gradient(from 180deg, rgba(0,153,255,0.45) 0%, rgba(0,255,0,0.45) 50%, rgba(0,153,255,0.45) 100%);
+  --halo: radial-gradient(circle, rgba(0,255,0,0.2) 0%, rgba(0,153,255,0.12) 42%, transparent 70%);
+  --canvas-r: 0; --canvas-g: 255; --canvas-b: 0;
+  --canvas-grid: rgba(0,255,0,0.02);
+}
+
+/* ================================================================
+   THEME: OCEAN / BLUE — Ocean Blue + Cyan enterprise calm
+   Design intent: Professional, trustworthy, modern enterprise-tech tone
+   Core palette:
+   - Primary accent: #00a8e8
+   - Secondary accent: #00d4ff
+   - Base background: #0a1628
+   ================================================================ */
+body[data-theme="ocean"] {
+  --accent: #00a8e8;
+  --accent-dim: rgba(0,168,232,0.16);
+  --accent-glow: rgba(0,168,232,0.4);
+  --accent-dark: #056a91;
+  --accent2: #00d4ff;
+  --bg: #0a1628;
+  --bg2: #0d1d34;
+  --bg3: #102543;
+  --glass: rgba(0,168,232,0.05);
+  --glass2: rgba(0,212,255,0.04);
+  --border: rgba(0,168,232,0.23);
+  --border2: rgba(0,212,255,0.14);
+  --text: #e8f6ff;
+  --text-dim: #82a8bf;
+  --text-dimmer: #4f6d82;
+  --hero-grad: linear-gradient(135deg, #00a8e8 0%, #00d4ff 100%);
+  --card-hover-glow: rgba(0,168,232,0.08);
+  --card-hover-border: rgba(0,168,232,0.35);
+  --btn-primary-bg: linear-gradient(135deg, #00a8e8, #00d4ff);
+  --btn-primary-color: #03111f;
+  --scrollbar-thumb: #056a91;
+  --spin-ring: conic-gradient(from 0deg, #00a8e8 0%, #00d4ff 50%, #00a8e8 100%);
+  --spin-ring2: conic-gradient(from 180deg, rgba(0,212,255,0.42) 0%, rgba(0,168,232,0.42) 50%, rgba(0,212,255,0.42) 100%);
+  --halo: radial-gradient(circle, rgba(0,168,232,0.2) 0%, rgba(0,212,255,0.14) 42%, transparent 70%);
+  --canvas-r: 0; --canvas-g: 168; --canvas-b: 232;
+  --canvas-grid: rgba(0,168,232,0.02);
+}
+
+/* ================================================================
    LEGACY ALIASES — keeps any reference to --green working
    ================================================================ */
 :root, body[data-theme="futuristic"] { --green: var(--accent); --green-dim: var(--accent-dim); --green-glow: var(--accent-glow); --green-dark: var(--accent-dark); }
 body[data-theme="spiderman"]  { --green: var(--accent); --green-dim: var(--accent-dim); --green-glow: var(--accent-glow); --green-dark: var(--accent-dark); }
 body[data-theme="anime"]      { --green: var(--accent); --green-dim: var(--accent-dim); --green-glow: var(--accent-glow); --green-dark: var(--accent-dark); }
 body[data-theme="instagram"]  { --green: var(--accent); --green-dim: var(--accent-dim); --green-glow: var(--accent-glow); --green-dark: var(--accent-dark); }
+body[data-theme="cyberpunk"]  { --green: var(--accent); --green-dim: var(--accent-dim); --green-glow: var(--accent-glow); --green-dark: var(--accent-dark); }
+body[data-theme="hacker"]     { --green: var(--accent); --green-dim: var(--accent-dim); --green-glow: var(--accent-glow); --green-dark: var(--accent-dark); }
+body[data-theme="ocean"]      { --green: var(--accent); --green-dim: var(--accent-dim); --green-glow: var(--accent-glow); --green-dark: var(--accent-dark); }
 
 /* ================================================================
    GLOBAL RESETS & BASE
@@ -230,6 +344,9 @@ nav {
 body[data-theme="spiderman"]  nav { background: rgba(5,5,8,0.75); }
 body[data-theme="anime"]      nav { background: rgba(7,5,15,0.75); }
 body[data-theme="instagram"]  nav { background: rgba(6,4,8,0.75); }
+body[data-theme="cyberpunk"]  nav { background: rgba(10,10,15,0.78); }
+body[data-theme="hacker"]     nav { background: rgba(0,0,0,0.82); }
+body[data-theme="ocean"]      nav { background: rgba(10,22,40,0.8); }
 
 nav.scrolled {
   padding: 12px 5%;
@@ -239,6 +356,9 @@ nav.scrolled {
 body[data-theme="spiderman"]  nav.scrolled { background: rgba(5,5,8,0.96); }
 body[data-theme="anime"]      nav.scrolled { background: rgba(7,5,15,0.96); }
 body[data-theme="instagram"]  nav.scrolled { background: rgba(6,4,8,0.96); }
+body[data-theme="cyberpunk"]  nav.scrolled { background: rgba(10,10,15,0.97); }
+body[data-theme="hacker"]     nav.scrolled { background: rgba(0,0,0,0.98); }
+body[data-theme="ocean"]      nav.scrolled { background: rgba(10,22,40,0.97); }
 
 .nav-logo {
   font-family: var(--font-head); font-size: 1.1rem;
@@ -299,6 +419,9 @@ body[data-theme="instagram"]  nav.scrolled { background: rgba(6,4,8,0.96); }
 .theme-btn[data-theme-target="spiderman"]  { background: linear-gradient(135deg, #FF2D2D, #007AFF); box-shadow: 0 0 6px rgba(255,45,45,0.5); }
 .theme-btn[data-theme-target="anime"]      { background: linear-gradient(135deg, #FF6EC7, #9333EA, #00E5FF); box-shadow: 0 0 6px rgba(255,110,199,0.5); }
 .theme-btn[data-theme-target="instagram"]  { background: linear-gradient(135deg, #F58529, #DD2A7B, #515BD4); box-shadow: 0 0 6px rgba(225,48,108,0.5); }
+.theme-btn[data-theme-target="cyberpunk"]  { background: linear-gradient(135deg, #ff006e, #b500ff); box-shadow: 0 0 6px rgba(255,0,110,0.55); }
+.theme-btn[data-theme-target="hacker"]     { background: linear-gradient(135deg, #00ff00, #0099ff); box-shadow: 0 0 6px rgba(0,255,0,0.55); }
+.theme-btn[data-theme-target="ocean"]      { background: linear-gradient(135deg, #00a8e8, #00d4ff); box-shadow: 0 0 6px rgba(0,168,232,0.55); }
 .theme-btn[title]::after {
   content: attr(title);
   position: absolute; bottom: 130%; left: 50%; transform: translateX(-50%);
@@ -322,6 +445,9 @@ body[data-theme="instagram"]  nav.scrolled { background: rgba(6,4,8,0.96); }
 body[data-theme="spiderman"] .mobile-menu { background: rgba(5,5,8,0.98); }
 body[data-theme="anime"]     .mobile-menu { background: rgba(7,5,15,0.98); }
 body[data-theme="instagram"] .mobile-menu { background: rgba(6,4,8,0.98); }
+body[data-theme="cyberpunk"] .mobile-menu { background: rgba(10,10,15,0.98); }
+body[data-theme="hacker"]    .mobile-menu { background: rgba(0,0,0,0.98); }
+body[data-theme="ocean"]     .mobile-menu { background: rgba(10,22,40,0.98); }
 .mobile-menu.open { display: flex; }
 .mob-link {
   font-family: var(--font-head); font-size: 1.5rem;
@@ -849,6 +975,48 @@ body[data-theme="instagram"] .skill-cat {
 }
 
 /* ================================================================
+   CYBERPUNK THEME SPECIFIC — High-contrast neon panel treatment
+   Adds a pink/purple luminous layer while preserving existing layout
+   ================================================================ */
+body[data-theme="cyberpunk"] .project-card,
+body[data-theme="cyberpunk"] .info-card,
+body[data-theme="cyberpunk"] .skill-cat {
+  background: linear-gradient(135deg, rgba(255,0,110,0.06) 0%, rgba(181,0,255,0.04) 100%);
+}
+body[data-theme="cyberpunk"] .section-title span,
+body[data-theme="cyberpunk"] .hero-name .line2 {
+  filter: drop-shadow(0 0 10px rgba(255,0,110,0.5));
+}
+
+/* ================================================================
+   HACKER THEME SPECIFIC — Terminal-forward glow and code emphasis
+   Enhances matrix readability and CRT-like signal glow on key text
+   ================================================================ */
+body[data-theme="hacker"] .project-card,
+body[data-theme="hacker"] .info-card,
+body[data-theme="hacker"] .skill-cat {
+  background: linear-gradient(135deg, rgba(0,255,0,0.045) 0%, rgba(0,153,255,0.03) 100%);
+}
+body[data-theme="hacker"] .section-title span,
+body[data-theme="hacker"] .hero-name .line2 {
+  filter: drop-shadow(0 0 8px rgba(0,255,0,0.55));
+}
+
+/* ================================================================
+   OCEAN THEME SPECIFIC — Calm glass gradients for enterprise tone
+   Introduces subtle cool-depth gradients and balanced accent bloom
+   ================================================================ */
+body[data-theme="ocean"] .project-card,
+body[data-theme="ocean"] .info-card,
+body[data-theme="ocean"] .skill-cat {
+  background: linear-gradient(135deg, rgba(0,168,232,0.05) 0%, rgba(0,212,255,0.03) 100%);
+}
+body[data-theme="ocean"] .section-title span,
+body[data-theme="ocean"] .hero-name .line2 {
+  filter: drop-shadow(0 0 8px rgba(0,168,232,0.5));
+}
+
+/* ================================================================
    RESPONSIVE
    ================================================================ */
 @media (max-width: 900px) {
@@ -911,6 +1079,9 @@ body[data-theme="instagram"] .skill-cat {
     <button class="theme-btn" data-theme-target="spiderman" title="SPIDERMAN" aria-label="Spiderman theme"></button>
     <button class="theme-btn" data-theme-target="anime" title="ANIME" aria-label="Anime theme"></button>
     <button class="theme-btn" data-theme-target="instagram" title="INSTAGRAM" aria-label="Instagram theme"></button>
+    <button class="theme-btn" data-theme-target="cyberpunk" title="CYBERPUNK" aria-label="Cyberpunk theme"></button>
+    <button class="theme-btn" data-theme-target="hacker" title="HACKER" aria-label="Hacker theme"></button>
+    <button class="theme-btn" data-theme-target="ocean" title="OCEAN" aria-label="Ocean theme"></button>
   </div>
 </div>
 
@@ -933,6 +1104,9 @@ body[data-theme="instagram"] .skill-cat {
     <button class="theme-btn" data-theme-target="spiderman" title="SPIDERMAN" aria-label="Spiderman theme"></button>
     <button class="theme-btn" data-theme-target="anime" title="ANIME" aria-label="Anime theme"></button>
     <button class="theme-btn" data-theme-target="instagram" title="INSTAGRAM" aria-label="Instagram theme"></button>
+    <button class="theme-btn" data-theme-target="cyberpunk" title="CYBERPUNK" aria-label="Cyberpunk theme"></button>
+    <button class="theme-btn" data-theme-target="hacker" title="HACKER" aria-label="Hacker theme"></button>
+    <button class="theme-btn" data-theme-target="ocean" title="OCEAN" aria-label="Ocean theme"></button>
   </div>
   <a href="mailto:singhmanishofficial102@gmail.com" class="nav-cta">HIRE ME</a>
   <div class="hamburger" id="hamburger">
@@ -1521,7 +1695,10 @@ function updateCanvasColors(theme) {
     futuristic: [57, 255, 20],
     spiderman:  [255, 45, 45],
     anime:      [255, 110, 199],
-    instagram:  [225, 48, 108]
+    instagram:  [225, 48, 108],
+    cyberpunk:  [255, 0, 110],
+    hacker:     [0, 255, 0],
+    ocean:      [0, 168, 232]
   };
   const c = colorMap[theme] || colorMap.futuristic;
   canvasR = c[0]; canvasG = c[1]; canvasB = c[2];
